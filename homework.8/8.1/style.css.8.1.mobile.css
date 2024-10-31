@@ -1,0 +1,10 @@
+@media screen and (max-width: 480px) {
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body{
+            height: 100vh;
+            background-image: url("radiacziya2.jpg");
+
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-60px)
+            translateY(90px);
+
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-top:60px solid yellow;
+            border-right: 60px solid black;
+            border-bottom: 60px solid yellow;
+            border-left: 60px solid black;
+            animation: preloader 3s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes preloader {
+            from{
+
+                transform:rotate(360deg);
+            }
+            to{
+                transform: rotate(-360deg); scale(2);
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="circle">
+
+</div>
+<div class="preloader">
+
+</div>
+</body>
+</html>
