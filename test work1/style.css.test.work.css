@@ -7,6 +7,10 @@
     font: inherit;
 }
 
+ul, ol, li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -332,12 +336,17 @@ body {
     overflow: hidden;
     max-width: 300px;
     width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
 }
-
 .portfolio-item img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    transition:all 0.3s;
+}
+.portfolio-item:hover img{
+    transform: scale(1.2);
 }
 
 .users {
@@ -388,9 +397,12 @@ body {
     padding: 25px 55px;
     text-align: left;
 }
-.price{
+
+.price {
     background: #FAF4F2;
+    padding: 0 30px 100px;
 }
+
 .price-plans {
     color: #222;
     font-size: 48px;
@@ -398,19 +410,156 @@ body {
     font-weight: 600;
     line-height: 123.6%; /* 59.328px */
     text-transform: capitalize;
+    margin-bottom: 65px;
 }
-.price-container{
+
+.price-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
 }
-.card{
+
+.card {
     display: flex;
     justify-content: space-between;
 }
 
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    margin-bottom:100px;
+}
 
+.price-container {
+    width: 100%;
 
+}
 
+.card-alt {
+    max-width: 335px;
+    width: 100%;
+    text-align: left;
+    padding: 35px 45px 25px;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
+    overflow: hidden;
+    transition:all 0.3s;
+    cursor: pointer;
+}
+.card-alt:hover h2{
+    background-color: #222;
+
+}
+.card-alt:hover{
+    transform: scale(1.2);
+}
+.head{
+text-align: center;
+    background: #FF9B70;
+    padding: 18px;
+    margin: -35px -45px 35px ;
+    color: #F9F9F9;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.6%; /* 29.664px */
+    text-transform: capitalize;
+    transition:all 0.3s;
+}
+.price-hour{
+    text-align: center;
+    color: #2B2B2B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.6%; /* 39.552px */
+    text-transform: capitalize;
+    margin-bottom:30px;
+}
+.price-hour span{
+    color: #2B2B2B;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    text-transform: capitalize;
+}
+.orange{
+    color: rgba(255,115,21,1) ;
+
+}
+.space{
+    color: rgba(34, 34, 34, 1);
+}
+.orange,
+.space{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.price-list li{
+    display: flex;
+    gap: 12px;
+    color: #222;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    text-transform: capitalize;
+}
+.light{
+    opacity: 0.5;
+}
+.price-bar{
+    border-radius: 25px;
+    background:#FF7315;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 75px;
+}
+.bar-title{
+    color:#F9F9F9;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62px; /* 172.222% */
+    max-width: 345px;
+}
+.bar-link{
+    border-radius: 10px;
+    background:#F9F9F9;
+    box-shadow: 0 0.927px 1.924px 0 rgba(0, 0, 0, 0.01);
+    color: #222;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 17px 75px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.bar-link:hover{
+    background:#222;
+    color:#F9F9F9;
+    transform: scale(1.2);
+}
